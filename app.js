@@ -2,7 +2,7 @@ const { Kafka, Partitioners } = require('kafkajs');
 
 const kafka = new Kafka({
     clientId: 'my-kafka-app', // Nama identifikasi unik untuk aplikasi Anda
-    brokers: ['localhost:9092'] // Sesuaikan dengan alamat dan port broker Kafka Anda
+    brokers: ['kafka:9092'] // Sesuaikan dengan alamat dan port broker Kafka Anda
 });
 
 const producer = kafka.producer({
