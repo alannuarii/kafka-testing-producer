@@ -1,7 +1,7 @@
 const { Kafka, Partitioners } = require('kafkajs');
 
 const kafka = new Kafka({
-    brokers: ['kafka:9092']
+    brokers: ['localhost:9092']
 });
 
 const producer = kafka.producer({
